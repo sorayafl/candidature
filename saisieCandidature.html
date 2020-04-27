@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Exercice 8</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+		
+		<fieldset>
+			<legend>Champs à renseigner</legend>
+
+			<form action="recapitulation.php" method="GET" name="authentification" >
+				
+				<label>Civilité :</label>
+				<select name="civilite" size="1">
+					<option value="m">Monsieur</option>
+					<option value="mme">Madame</option>
+					<option value="mlle">Mademoiselle</option>
+				</select>
+				<br/>	
+	
+				<label>Nom :</label>
+				<input required type="text" name="nom" placeholder="Saisir votre nom" />
+				<br/>
+				
+				<label>Prénom :</label>				
+				<input required type="text" name="prenom" placeholder="Saisir votre prénom" />
+				<br/>
+				
+				<label>Date de naissance :</label>	
+				
+				<input required type="date" name="dateNaissance" placeholder="Saisir votre date de naissance" />
+				<br/>
+				
+				<label>Numéro de télephone :</label>				
+				<input required type="tel" name="telephone" placeholder="0x-xx-xx-xx-xx" />
+				<br/>
+				
+				<label>Adresse électronique :</label>				
+				<input required type="email" name="email" placeholder="aaaaa@bbbbb.ccc" />
+				<br/>	
+							
+				<label> Niveau en PHP :</label>	
+				<br/>	
+				<input type="radio" name="niveau" value="d" />Débutant
+				<input type="radio" name="niveau" value="m" />Moyen
+				<input type="radio" name="niveau" value="b" />Bon
+				<br/>
+				
+				<label> frameworks PHP pratiqués :</label>
+				<br/>
+				<input type="checkbox" name="framework[]" value="Symfony" />Symfony
+				<input type="checkbox" name="framework[]" value="CodeIgniter" />CodeIgniter
+				<input type="checkbox" name="framework[]" value="FuelPHP" />FuelPHP
+				<input type="checkbox" name="framework[]" value="CakePHP" />CakePHP
+				<input type="checkbox" name="framework[]" value="Laravel" />Laravel
+				<br/>
+				<br/>
+								
+				<label> Parcours suivis : </label>
+				<br/>		
+				<textarea name="votreParcours" rows="8" cols="45"  ></textarea>
+
+
+				<br/>
+				<input type="submit" value="Valider" />
+				<input type="reset" value="Annuler" />
+				
+			</form>
+
+
+		</fieldset>
+		
+	</body>
+	
+</html>
